@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendar & Scheduling</title>
+  <link rel="stylesheet" href="dasboard.css">
+</head>
+<body>
+  <div class="calendar-container">
+    <div class="calendar-header">
+      <button id="prev-month">❮</button>
+      <h2 id="month-year"></h2>
+      <button id="next-month">❯</button>
+    </div>
+    <div class="calendar-grid" id="calendar-grid"></div>
+  </div>
+
+  <div class="task-container">
+    <h3>Tasks</h3>
+    <ul id="task-list">
+      <li draggable="true" class="task">Complete project report</li>
+      <li draggable="true" class="task">Team meeting</li>
+      <li draggable="true" class="task">Doctor appointment</li>
+    </ul>
+  </div>
+
+  <script src="dash.js"></script>
+</body>
+</html>
