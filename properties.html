@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properties - PropHub</title>
+    <link rel="stylesheet" href="prop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">PropHub</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="properties.html" class="active">Properties</a>
+            <a href="sell.html">Sell/Rent Property</a>
+            <div class="auth-buttons">
+                <a href="signin.html" class="btn-signin">Sign In</a>
+                <a href="signup.html" class="btn-signup">Sign Up</a>
+            </div>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <h1>Explore Our Properties</h1>
+        <p>Find your ideal property from our extensive collection.</p>
+    </header>
+
+    <section class="property-filter">
+        <h2>Filter & Sort</h2>
+        <form>
+            <div class="filter-group">
+                <label for="propertyType">Property Type</label>
+                <select id="propertyType">
+                    <option value="all">All Types</option>
+                    <option value="house">House</option>
+                    <option value="apartment">Apartment</option>
+                    <option value="villa">Villa</option>
+                    <option value="shop">Shop</option>
+                    <option value="office">Office Space</option>
+                    <option value="land">Land</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="transactionType">Transaction Type</label>
+                <select id="transactionType">
+                    <option value="all">Buy/Rent</option>
+                    <option value="buy">Buy</option>
+                    <option value="rent">Rent</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="priceRange">Price Range</label>
+                <div class="range-inputs">
+                    <input type="number" id="minPrice" placeholder="Min">
+                    <span>to</span>
+                    <input type="number" id="maxPrice" placeholder="Max">
+                </div>
+            </div>
+            <div class="filter-group">
+                <label for="sortBy">Sort By</label>
+                <select id="sortBy">
+                    <option value="relevance">Relevance</option>
+                    <option value="priceLowHigh">Price: Low to High</option>
+                    <option value="priceHighLow">Price: High to Low</option>
+                    <option value="newest">Newest Listings</option>
+                </select>
+            </div>
+            <button type="submit" class="btn-primary">Apply Filters</button>
+        </form>
+    </section>
+
+    <section class="property-list">
+        <h2>Properties</h2>
+        <div class="property-grid">
+            <div class="property-card">
+                <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6" alt="Modern House">
+                <div class="property-info">
+                    <span class="property-price">$450,000</span>
+                    <h3>Modern Family House</h3>
+                    <p class="property-location"><i class="fas fa-map-marker-alt"></i> 123 Main St, City</p>
+                    <div class="property-stats">
+                        <span><i class="fas fa-bed"></i> 4 Beds</span>
+                        <span><i class="fas fa-bath"></i> 3 Baths</span>
+                        <span><i class="fas fa-ruler-combined"></i> 2,500 sq.ft</span>
+                    </div>
+                    <button class="btn-view">View Details</button>
+                </div>
+            </div>
+            <div class="property-card">
+                <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267" alt="Luxury Apartment">
+                <div class="property-info">
+                    <span class="property-price">$2,500/month</span>
+                    <h3>Luxury Apartment</h3>
+                    <p class="property-location"><i class="fas fa-map-marker-alt"></i> 456 Park Ave, City</p>
+                    <div class="property-stats">
+                        <span><i class="fas fa-bed"></i> 2 Beds</span>
+                        <span><i class="fas fa-bath"></i> 2 Baths</span>
+                        <span><i class="fas fa-ruler-combined"></i> 1,200 sq.ft</span>
+                    </div>
+                    <button class="btn-view">View Details</button>
+                </div>
+            </div>
+            <div class="property-card">
+                <img src="https://images.unsplash.com/photo-1582407947304-fd86f028f716" alt="Commercial Shop">
+                <div class="property-info">
+                    <span class="property-price">$300,000</span>
+                    <h3>Commercial Shop</h3>
+                    <p class="property-location"><i class="fas fa-map-marker-alt"></i> 789 Market St, City</p>
+                    <div class="property-stats">
+                        <span><i class="fas fa-ruler-combined"></i> 800 sq.ft</span>
+                        <span><i class="fas fa-parking"></i> 2 Parking</span>
+                    </div>
+                    <button class="btn-view">View Details</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>PropHub</h3>
+                <p>Your trusted partner in real estate</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="#">About Us</a>
+                <a href="#">Properties</a>
+                <a href="#">Add Property</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-envelope"></i> info@prophub.com</p>
+                <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Real Estate Ave, City</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 PropHub. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
